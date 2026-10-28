@@ -1,7 +1,7 @@
 :root{
-    --of-black: #242424;
+    --of-black: #000000;
     --back-1: #00b573;
-    --of-white: #e7fff7;
+    --of-white: white;
 }
 
 *{
@@ -41,7 +41,7 @@ nav {
 }
 nav a{
     /* text */
-    color: whitesmoke;
+    color: white;
     font-size: 1.3rem;
     text-decoration: none;
     text-align: center;
@@ -109,7 +109,7 @@ h1{
     /* text */
     text-align: center;
     color: var(--of-black);
-    font-weight: 300;
+    font-weight: 400;
     
     padding: 10px;
     border-radius: 13px 13px 0 0;
