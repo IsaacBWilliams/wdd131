@@ -1,0 +1,131 @@
+:root{
+    --of-black: #000000;
+    --back-1: #5af598;
+    --of-white: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+main { 
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer{
+    background-color: var(--back-1);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+h1{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    grid-column: 1 / 4;
+}
+
+/* --------------- The section and images --------------- */
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+#center-section {
+	margin: 1rem auto;
+	max-width: 960px;
+	padding: 0.5rem;
+}
+figure img {
+	width: 100%;
+	height: auto;
+	margin: 0.5rem;
+    
+    border: 2px solid var(--of-black);
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px 2px rgba(75, 66, 66, 0.5);
+}
+
+
+/* --------------- The Nav --------------- */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--back-1);
+}
+
+nav {
+    background-color:var(--back-1);
+    flex: 0 0 100%;
+    /* justify-content: space-evenly; */
+    margin-right: 0;
+}
+.ul-navigation {
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+nav li{
+    display: none;
+}
+nav a{
+    color: var(--of-black);
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: left;
+    font-weight: 700;
+    
+    display: block;
+    padding: 1rem;
+}
+nav a:hover{
+    text-decoration: underline 2px;
+    transition: .5s;
+    background-color: #3fe582;
+}
+
+header p{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+figure {
+    text-align: center;
+    font-weight: 700;
+}
+
+/* ----------- The Menu --------------- */
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    color: var(--of-black);
+}
+    
+#menu::before{
+    content: "≡";
+    margin-right: 1rem;
+}
+
+#menu.show::before{
+    content: "X";
+}
+
+.show li{
+    display: block;
+}
