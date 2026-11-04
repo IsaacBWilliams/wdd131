@@ -48,7 +48,6 @@ h1{
 figure img {
 	width: 100%;
 	height: auto;
-	margin: 0.5rem;
     
     border: 2px solid var(--of-black);
     border-radius: 2px;
