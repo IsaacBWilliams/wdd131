@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsize Image Web Page</title>
+    <meta name="description" content="This is a page I made to help me learn skills in Web Development. Image responsive">
+    <meta name="author" content="Isaac Williams">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="The Salt Lake Temple" width="1000px" height="700px">
+            </picture>
+        </div>
+    </main>
+    
+</body>
+</html>
