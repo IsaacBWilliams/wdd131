@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Isaac Williams</title>
+    <meta name="description" content="This is the Place section for my W131 class. This page is about Utah.">
+    <meta name="author" content="Isaac Williams">
+    <link rel="stylesheet" href="styles/place.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Utah</h1>
+        <div class="hero">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/utah-image-large-long.webp">
+                    <source media="(min-width: 500px)" srcset="images/utah-image-medium-long.webp">
+                    <img class="hero-img" src="images/utah-image-small-tall.webp" alt="The Salt Lake Temple" width="1000px" height="667">
+                </picture>
+            <div class="data">
+                <div class="header-box">
+                <h2>Data</h2>
+                </div>
+                    <div class="label">
+                        <p><b>Area: </b>
+                        <p><b>Population: </b>
+                        <p><b>Capital: </b>
+                        <p><b>Languages: </b>
+                        <p><b>Time Zone: </b>
+                        <p><b>Calling Code: </b>
+                        <p><b>Internet TLD: </b>
+                    </div>
+                    <div class="info">
+                        <p>	219,890 sq km</p>
+                        <p>3,538,904</p>
+                        <p>Salt Lake City</p>
+                        <p>English</p>
+                        <p>MST/MDT</p>
+                        <p>+1</p>
+                        <p>.us</p>
+                    </div>
+            </div>
+            <hr>
+            <div class="weather">
+                <div class="header-box">
+                    <h2>Weather</h2>
+                    <img src="images/partly-cloudy-weather-icon.svg" alt="Sunny weather icon.">
+                </div>
+                    <div class="label">
+                        <p><b>Temperature: </b>
+                        <p><b>Conditions: </b>
+                        <p><b>Wind: </b>
+                        <p><b>Wind Chill: </b>
+                    </div>
+                    <div class="info">
+                        <p id="deg"></p>
+                        <p>Mostly cloudy</p>
+                        <p id="wind-speed"></p>
+                        <p id="wind-chill"></p>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌲 Isaac Williams 🌲 Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,150 @@
+:root{
+  --background-1: rgb(255, 123, 47);
+  --background-2: rgb(227, 66, 66);
+  --txt-1: #0d1f0f;
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.hero{
+  position: relative;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top: 2rem solid var(--background-2);
+  border-bottom: .5rem solid var(--background-2);
+}
+
+h1{
+  background-color: var(--background-1);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--txt-1);
+}
+
+.header-box {
+  text-align: center;
+  font-size: 1.3rem;
+  grid-column: 1 / 3;
+  grid-row: 1;
+  margin-top: 1rem;
+}
+
+.data{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1rem 1fr;
+  gap: 2rem;
+}
+
+.data p, .weather p{
+  padding-bottom: 0.6rem;
+}
+
+.label{
+  text-align: end;
+  grid-row: 3;
+  grid-column: 1;
+}
+.info{
+  grid-row: 3;
+  grid-column: 2;
+  text-align: start;
+}
+.weather{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5.5rem 1fr;
+  gap: 2rem;
+}
+.weather img{
+  width: 65px;
+  grid-column: 1 /3;
+  grid-row: 2;
+  margin: 0 auto;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid rgb(145, 145, 145);
+  margin: 1rem 0 1rem 0;
+}
+
+footer{
+    background-color: var(--background-1);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* --------For The Big Screen--------------- */
+
+@media only screen  and (min-width: 500px){
+
+  /* Get rid of the hr line */
+  hr{
+    border: none;
+    margin: 0;
+  }
+
+  .header-box {
+    background-color: var(--background-2);
+    position: absolute;
+    left: -1rem;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .header-box img{
+    display: none;
+  }
+  .weather h2::after{
+    content:" 🌤️"
+  }
+  .data{
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    background-color: rgba(255, 255, 255, 0.753);
+    display: grid;
+  }
+  .weather{
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+    background-color: rgba(255, 255, 255, 0.753);
+    display: grid;
+      grid-template-rows: 2rem 1fr;
+  }
+
+  .label{
+    margin: 1rem 0 1rem 1rem;
+  }
+  .info{
+    margin: 1rem 1rem 1rem 0;
+  }
+  footer{
+    margin: 0;
+  }
+  picture {
+    background-color: var(--background-1);
+  }
+  .hero-img{
+    border-bottom: none;
+  }
+}
