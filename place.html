@@ -12,8 +12,25 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+        media="print"
+        onload="this.media='all'">
+
+    <noscript>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap">
+    </noscript>
+    <!-- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     -->
     <script src="scripts/place.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
@@ -26,7 +43,7 @@
         <div class="hero">
                 <picture>
                     <source media="(min-width: 500px)" srcset="images/utah-image-large-long.webp" width="960" height="640">
-                    <img class="hero-img" src="images/utah-image-small-tall.webp" alt="The Salt Lake Temple" width="500" height="888">
+                    <img class="hero-img" src="images/utah-image-small-tall.webp" alt="An Image of Utah's moutan rocks" width="500" height="888" fetchpriority="high">
                 </picture>
             <div class="data">
                 <div class="header-box">
