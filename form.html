@@ -1,6 +1,3 @@
-<!-- (= 1 =) The remaining options are created dynamically using a provided product array.
-Each option must have a value attribute that is the product name -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +17,19 @@ Each option must have a value attribute that is the product name -->
 </head>
 <body>
     <main>
+        <header>
+            <h1>Product Review</h1>
+        </header>
 
-        <h1>Product Review</h1>
 
-        <form methor="get" action="review.html" class="wf1">
+        <form method="get" action="review.html" class="wf1">
 
-            <!-------- The Product Name Part -------->
+            <!-- The Product Name Part -->
             <label class="bold">Product Name*<select id="proName" name="proName" required>
                 <option disabled selected value="">Select a Product ... &#9660;</option>
             </select></label>
 
-            <!-------- The Star Rating Part -------->
+            <!--The Star Rating Part -->
             <div class="divLabel bold">Star Rating*</div>
             <div class="starRatingGroup">
                 <input type="radio" name="starRating" id="5star" value="5" required> <label for="5star"></label>
@@ -40,10 +39,10 @@ Each option must have a value attribute that is the product name -->
                 <input type="radio" name="starRating" id="1star" value="1" required> <label for="1star"></label>
             </div>
 
-            <!-------- The Date of instalation Part -------->
+            <!-- The Date of instalation Part -->
             <label class="bold">Date of Instalation*<input type="date" id="dateOfInstal" name="dateOfInstal" required></label>
         
-            <!-------- The Useful Features Part -------->
+            <!--he Useful Features Part-->
             <div class="divLabel">What features did you find useful?</div>
             <p>(Please select all that aply)</p>
             <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
@@ -51,13 +50,13 @@ Each option must have a value attribute that is the product name -->
             <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
             <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
 
-            <!-------- The Writen Review Part -------->
-            <label>Writen Review<p class="smallPrint">(This is optional)</p><textarea id="writenReview" name="writenReview"></textarea></label>
+            <!-- The Writen Review Part -->
+            <label>Writen Review<span class="smallPrint">(This is optional)</span><textarea id="writenReview" name="writenReview"></textarea></label>
 
-            <!-------- The Name Part -------->
-            <label>Your Name<p class="smallPrint">(This is optional)</p><input type="text" id="name" name="name"></label>
+            <!-- The Name Part -->
+            <label>Your Name<span class="smallPrint">(This is optional)</span><input type="text" id="name" name="name"></label>
 
-            <!-------- The Submit Button Part -------->
+            <!-- The Submit Button Part -->
             <button type="submit" class="readyButton">Post Your Review</button>
         </form>
     </main>
