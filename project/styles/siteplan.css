@@ -1,0 +1,41 @@
+:root{
+    --background-1: rgb(255, 57, 57);
+    --background-2: rgb(0, 140, 255);
+    --background-3: rgb(255, 221, 221);
+    --text-1: rgb(35, 35, 35);
+
+    --heading-font: "Archivo Black", sans-serif;
+    --accent-font: "Fredoka", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+*{
+    color: var(--text-1);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: var(--accent-font);
+    text-align: center;
+    background-color: var(--background-2);
+    width: 100%;
+    padding: .5rem;
+}
+
+
+h1{
+    background-color: var(--background-1);
+    color: var(--text-1);
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
